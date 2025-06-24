@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <title>USD/JPY 為替予測</title>
+</head>
+<body>
+  <h1>USD/JPY 為替予測AI</h1>
+  
+  <p>青い線は過去のUSD/JPYの終値（実際のデータ）を示し、赤い線はARIMAモデルによる将来10日間の価格予測です。</p>
+
+  <p>ページをリロードすると最新データで自動的に更新されます。</p>
+
+  {% if error %}
+    <p style="color:red;">エラー: {{ error }}</p>
+  {% endif %}
+
+  {% if plot_img %}
+    <img src="data:image/png;base64,{{ plot_img }}" alt="為替予測グラフ" />
+  {% endif %}
+</body>
+</html>

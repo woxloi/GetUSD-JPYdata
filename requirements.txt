@@ -1,0 +1,7 @@
+Flask
+pandas
+numpy
+matplotlib
+requests
+statsmodels
+#依存関係のファイル
